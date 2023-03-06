@@ -1,0 +1,47 @@
+let people = ['Greg', 'Mary', 'Devon', 'James'];
+let i = 0;
+for(i = 0; i < people.length; i++) {
+    people[i] = console.log(people[i])
+}
+
+To remove Greg from the list of people 
+= people.shift()  // ['Mary', 'Devon', 'James']
+
+to remove James = 
+people.pop() //  ['Mary', 'Devon']
+
+to add 'Matt' to the front =
+people.unshift(' matt') //['matt', 'Mary', 'Devon']
+
+to add my name to the end of the list =
+people.push('Mariam') // ['matt', 'Mary', 'Devon', 'mariam']
+
+for( let i = 0; i < people.length; i++){
+    if (people[i] <='Mary') {
+    console.log('Mary');
+        break;
+}
+    else {
+        console.log(people[i])
+    }
+} // 'Mary'
+
+to make a copy of an array with slice while removing 'Mary' and 'Matt' =
+people.slice(2,4)// ['Devon', 'Mariam']
+
+to use indexOf command to locate where 'Mary' is = 
+people.indexOf('Mary')// 1
+
+to use indexOf command to locate where 'foo' is = people.indexOf('foo') // -1
+
+Using the splice command, remove "Devon" from the array and add "Elizabeth" and "Artie". = 
+people.splice(2, 1, "Elizabeth", "Artie")
+['Devon'] //(5) ['Greg', 'Mary', 'Elizabeth', 'Artie', 'James']
+
+To create a new variable called withBob and set it equal to the people array =
+
+let withBob = people // (5) ['Greg', 'Mary', 'Elizabeth', 'Artie', 'James'] 
+to concatenate people with bob = 
+withBob = people.concat("Bob") //['Greg', 'Mary', 'Elizabeth', 'Artie', 'James', 'Bob']
+
+
